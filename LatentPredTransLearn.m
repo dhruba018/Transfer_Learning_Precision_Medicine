@@ -55,14 +55,14 @@ fprintf('Finished! \n')
 
 % Predictors... X1 & X2
 fprintf('>> Cost optimization of input data... ')
-L_opt = zeros(3, p);                                               % ? = [?1, ?2, ... , ?p]
+L_opt = zeros(3, p);                                               % Λ = [λ1, λ2, ... , λp]
 V = zeros(n, p);
 for k = 1:p
     x1k = X1(:, k);     x2k = X2(:, k);                          % x_{1k}, x_{2k}
     Jk = @(Lk) OptFuncTL(x1k, x2k, Lk);         Lk0 = [-1, 0, 1]';
-    Lk_opt = fmincon(Jk, Lk0, A, b, Aeq, beq, lb, ub, [ ], options);       % ?_k
+    Lk_opt = fmincon(Jk, Lk0, A, b, Aeq, beq, lb, ub, [ ], options);       % λ_k
     L_opt(:, k) = Lk_opt;
-    [~, vk] = OptFuncTL(x1k, x2k, Lk_opt);                % v_k = ?k_0 + ?k_1 x_{1k} + ?k_2 x_{2k} 
+    [~, vk] = OptFuncTL(x1k, x2k, Lk_opt);                % v_k = λk_0 + λk_1 x_{1k} + λk_2 x_{2k} 
     V(:, k) = vk;
 end
 V1 = V(1:nTrain, :);     V2 = V(nTrain+1:end, :);
