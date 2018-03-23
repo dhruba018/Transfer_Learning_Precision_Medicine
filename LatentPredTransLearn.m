@@ -68,6 +68,7 @@ end
 V1 = V(1:nTrain, :);     V2 = V(nTrain+1:end, :);
 fprintf('Finished! \n')
 
+rng(0)                                                                  % Seed
 % LATENT REGRESSION PREDICTION (LRP)...
 fprintf('>> Performing LRP... \n')
 Y21 = [ones(nTrain, 1), y21];
