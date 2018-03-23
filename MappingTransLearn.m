@@ -80,9 +80,9 @@ fprintf('Finished! \n')
 
 
 % % BIAS CORRECTION...
+rng(0)                                                                  % Seed
 % Validation set...
 fprintf('>> Retrieving Bias Model:Started... \n')
-rng(0)
 nVal = round(nTrain/2);
 idx1 = sort(randperm(nTrain, nVal))';
 idx2 = (1:nTrain)';             idx2(idx1) = [ ];
