@@ -168,6 +168,7 @@ d12b = Pred_y_bias;                                            % Bias Estimate
 % Bias corrected prediction...
 fprintf('>> \t Performing Bias Corrected Prediction \n')
 d12mb = d12m + d12b;
+d12mb(d12mb < 0) = 0;
 pPred = d12mb;
 fprintf('>> Finished! \n')
 
