@@ -1,5 +1,8 @@
 ### Transfer_Learning_Precision_Medicine  
-Predictive modeling of drug sensitivity is an important step in precision therapy design and often there is a shortage of suitable data for modeling. Hence we attempt to use data from multiple sources for modeling purposes and the recent advent of large-scale pharmacogenomic studies offers a convenient getaway from this conundrum. Here we use genomic and sensitivity data from two renowned studies - [CCLE](https://portals.broadinstitute.org/ccle) and [GDSC](http://www.cancerrxgene.org/) and combine them through **Transfer Learning (TL)** since samples from different sources cannot be used together directly. We implement two different TL approaches - 
+Predictive modeling of drug sensitivity is an important step in precision therapy design and often there is a shortage of suitable data for modeling. Hence we attempt to use data from multiple sources for modeling purposes and the recent advent of large-scale pharmacogenomic studies offers a convenient getaway from this conundrum. 
+
+**Description**  
+We use genomic and sensitivity data from two renowned studies - [CCLE](https://portals.broadinstitute.org/ccle) and [GDSC](http://www.cancerrxgene.org/) and combine them through **Transfer Learning (TL)** since samples from different sources cannot be used together directly. We implement two different TL approaches - 
 * Latent Variable based Cost Optimization
     * Latent regression prediction
     * Latent-latent prediction
