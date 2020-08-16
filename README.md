@@ -4,3 +4,5 @@ Predictive modeling of drug sensitivity is an important step in precision therap
 * Domain Transfer via Nonlinear Mapping  
 
 Details of the approaches are described in this 2018 paper: [Application of transfer learning for cancer drug sensitivity prediction](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2465-y). 
+
+![TransferLearningSummary](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/TLsummary.pdf)
