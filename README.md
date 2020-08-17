@@ -1,4 +1,4 @@
-### Transfer Learning for Precision Medicine  
+#### Transfer learning for precision medicine  
 Predictive modeling of drug sensitivity is an important step in precision therapy design and often there is a shortage of suitable data for modeling. Hence we attempt to use data from multiple sources for modeling purposes and the recent advent of large-scale pharmacogenomic studies offers a convenient getaway from this conundrum. 
 
 **Description.**  
