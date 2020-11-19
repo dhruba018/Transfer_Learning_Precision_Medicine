@@ -4,8 +4,8 @@ Predictive modeling of drug sensitivity is an important step in precision therap
 ### Description
 **Data.**  
 We use *in vitro* transcriptomic and drug sensitivity information from the administration of various anticancer drugs on multiple Cancer cell lines of different subtypes. This data were obtained from two renowned large-scale pharmacogenomic studies - 
-   * The [Cancer Cell Line Encyclopedia (CCLE)](https://portals.broadinstitute.org/ccle/about/) project from the collaboration between the Broad Institute and the Genomics Institute of the Novartis Research Foundation at the Novartis Institutes for Biomedical Research.
-   * The [Genomics of Drug Sensitivity in Cancer (GDSC)](https://www.cancerrxgene.org/about) project from the collaboration between the Cancer Genome Project at the Wellcome Sanger Institute (UK) and the Center for Molecular Therapeutics, Massachusetts General Hospital Cancer Center (USA). 
+   * [Cancer Cell Line Encyclopedia (CCLE)](https://portals.broadinstitute.org/ccle/about/). A collaboration between Broad Institute and Novartis Institutes for Biomedical Research.
+   * [Genomics of Drug Sensitivity in Cancer (GDSC)](https://www.cancerrxgene.org/about). A collaboration between Wellcome Sanger Institute (UK) and Center for Molecular Therapeutics at Massachusetts General Hospital Cancer Center (USA). 
 
 **Approaches.**  
 We combine datasets from CCLE and GDSC through **Transfer Learning (TL)** since samples from different sources cannot be used together directly (we performed detailed comparison for these two studies in our earlier work [in Briefings in Bioinformatics](https://academic.oup.com/bib/article-abstract/20/5/1734/5034074)). We implement two different TL approaches - 
