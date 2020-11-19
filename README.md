@@ -19,7 +19,7 @@ We have combined datasets from CCLE and GDSC through **Transfer Learning (TL)** 
    * <ins><b>Domain Transfer _via_ Nonlinear Mapping</b></ins>.  
      We implement a one-to-one sample mapping between primary (target) and secondary (source) datasets using *Polynomial regression mapping*.
      
-     z<sub>s, i</sub> = \omega<sub>p</sub><sup>(i)</sup> z<sub>p, i</sub> + \varepsilon<sup>(i)</sup>
+     z<sub>s, i</sub> = w<sub>p</sub><sup>(i)</sup> z<sub>p, i</sub> + e<sup>(i)</sup>
      
 
 The details of these approaches are described in the 2018 paper [Application of transfer learning for cancer drug sensitivity prediction](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2465-y). Below provides an overview of the TL scenarios involved in this implementation. 
