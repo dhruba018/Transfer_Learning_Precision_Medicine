@@ -25,6 +25,5 @@ The details of these approaches are described in the 2018 paper [Application of 
 
 **Cite.**  
 If you use either the Domain Transfer TL approach or Latent Variable Cost Optimization TL approach for your research/application, please cite the following paper - 
-
-      Dhruba, S., Rahman, R., Matlock, K. et al. Application of transfer learning for cancer drug sensitivity prediction. BMC Bioinformatics 19, 497 (2018).               
-      https://doi.org/10.1186/s12859-018-2465-y
+> Dhruba, S., Rahman, R., Matlock, K. et al. Application of transfer learning for cancer drug sensitivity prediction. BMC Bioinformatics 19, 497 (2018). 
+  DOI: https://doi.org/10.1186/s12859-018-2465-y
