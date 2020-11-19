@@ -13,13 +13,13 @@ There is a considerable overlap between the two studies and we have explored the
 We have combined datasets from CCLE and GDSC through **Transfer Learning (TL)** since the samples from two different sources cannot be used together directly. To eliminate the distribution shift present in the two sets, we have implemented two different TL approaches - 
    * <ins><b>Latent Variable based Cost Optimization</b></ins>.  
      We use a *Latent variable space* to model the underlying similarities between the genomic and sensitivity datasets and try to minimize the discepancies _via_ cost optimization. We implemented three different subapproaches -      
-      * <sb>Latent regression prediction</sb>
+      * Latent regression prediction
       * Latent-latent prediction
       * Combined latent prediction
    * <ins><b>Domain Transfer _via_ Nonlinear Mapping</b></ins>.  
      We implement a one-to-one sample mapping between primary (target) and secondary (source) datasets using *Polynomial regression mapping*.
      
-     ![equation](https://bit.ly/36UOT3I)
+     `z<sub>s, i</sub> = \omega<sub>p</sub><sup>(i)</sup> z<sub>p, i</sub> + \varepsilon<sup>(i)</sup>`
      
 
 The details of these approaches are described in the 2018 paper [Application of transfer learning for cancer drug sensitivity prediction](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2465-y). Below provides an overview of the TL scenarios involved in this implementation. 
