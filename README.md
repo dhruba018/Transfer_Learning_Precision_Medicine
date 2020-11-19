@@ -19,7 +19,7 @@ We have combined datasets from CCLE and GDSC through **Transfer Learning (TL)** 
    * <ins><b>Domain Transfer _via_ Nonlinear Mapping</b></ins>.  
      We implement a one-to-one sample mapping between primary (target) and secondary (source) datasets using *Polynomial regression mapping*.
      
-     ![equation](http://latex.codecogs.com/svg.latex?%5Cbegin%7Balign*%7D%5Cboldsymbol%7Bg%7D_%7Bs,%20i%7D%20&=%20%5Cboldsymbol%7B%5Calpha%7D_p%5E%7B(i)%7D%20%5C,%20%5Cboldsymbol%7Bg%7D_%7Bp,%20i%7D%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D%5E%7B(i)%7D%20%5C%5C%5Cboldsymbol%7Bd%7D_%7Bp,%20j%7D%20&=%20%5Cboldsymbol%7B%5Cbeta%7D_s%5E%7B(j)%7D%20%5C,%20%5Cboldsymbol%7Bd%7D_%7Bs,%20j%7D%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D%5E%7B(j)%7D%5Cend%7Balign*%7D%20)
+     ![equation](http://latex.codecogs.com/svg.latex?\begin{align*}\boldsymbol{g}_{s,&space;i}&space;&=&space;\boldsymbol{\alpha}_p^{(i)}&space;\,&space;\boldsymbol{g}_{p,&space;i}&space;&plus;&space;\boldsymbol{\varepsilon}^{(i)}&space;\\\boldsymbol{d}_{p,&space;j}&space;&=&space;\boldsymbol{\beta}_s^{(j)}&space;\,&space;\boldsymbol{d}_{s,&space;j}&space;&plus;&space;\boldsymbol{\varepsilon}^{(j)}\end{align*}&space;)
      
 
 The details of these approaches are described in the 2018 paper [Application of transfer learning for cancer drug sensitivity prediction](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2465-y). Below provides an overview of the TL scenarios involved in this implementation. 
