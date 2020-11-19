@@ -18,6 +18,7 @@ We have combined datasets from CCLE and GDSC through **Transfer Learning (TL)** 
       * Combined latent prediction
    * <ins><b>Domain Transfer _via_ Nonlinear Mapping</b></ins>.  
      We implement a one-to-one sample mapping between primary (target) and secondary (source) datasets using *Polynomial regression mapping*.
+     
      $$ g_{2i} = \alpha_0^{(i)} + \alpha_1^{(i)} g_{1i} + \varepsilon^{(i)} $$
      $$ d_{1j} = \beta_0^{(j)} + \beta_1^{(j)} d_{2j} + \beta_2^{{j)} d_{2j}^2 + \varepsilon^{(j)} $$
 
