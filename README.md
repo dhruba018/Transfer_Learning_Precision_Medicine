@@ -12,19 +12,18 @@ There is a considerable overlap between the two studies and we have explored the
 **Approaches.**  
 We have combined datasets from CCLE and GDSC through **Transfer Learning** since the samples from two different sources cannot be used together directly. To eliminate the distribution shift present in the two sets, we have implemented two different TL approaches - 
    * <ins><b>Latent Variable based Cost Optimization</b></ins>.  
-     We use a *Latent variable space* to model the underlying similarities between the genomic and sensitivity datasets and try to minimize the discepancies _via_ cost optimization. 
-     
-     ![lvco_eqn](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Clarge%20%5Cboldsymbol%7Bw%7D%20%3D%20c_0%20&plus;%20c_p%20%5Cboldsymbol%7Bz%7D_p%20&plus;%20c_s%20%5Cboldsymbol%7Bz%7D_s%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D)  
+     We use the notion of a *Latent variable space* to model the underlying similarities between the genomic and sensitivity datasets and attempt to minimize the discepancies through cost optimization.  
+     ![lvco_eqn](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Clarge%20%5Cboldsymbol%7Bw%7D%20%3D%20c_0%20&plus;%20c_p%20%5Cboldsymbol%7Bz%7D_p%20&plus;%20c_s%20%5Cboldsymbol%7Bz%7D_s%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D%2C%20%5Cqquad%20%5Csum_i%20%7Bc_i%7D%20%3D%201)  
      where <i><b>z</b><sub>p</sub></i> and <i><b>z</b><sub>s</sub></i> represents the primary (target) and secondary (source) sets, and <i><b>w</b></i> is the underlying latent variable.  
      We have implemented three different optimization based approaches - 
       * Latent regression prediction
       * Latent-latent prediction
       * Combined latent prediction
-   
    * <ins><b>Domain Transfer _via_ Nonlinear Mapping</b></ins>.  
-     We implement a one-to-one sample mapping between primary (target) and secondary (source) datasets using *Polynomial regression mapping*.
+     We implement a one-to-one mapping between the samples in the primary and secondary datasets using the *Polynomial regression mapping*.  
+     ![dtnm_eqn](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Cboldsymbol%7Bz%7D_%7Bs%2C%20i%7D%20%3D%20%5Cboldsymbol%7B%5Comega%7D_p%5E%7B%28i%29%7D%20%5C%2C%20%5Cboldsymbol%7Bz%7D_%7Bp%2C%20i%7D%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D%5E%7B%28i%29%7D)  
+     where <i><b>z</b><sub>p</sub></i> and <i><b>z</b><sub>s</sub></i> again represents the primary and secondary sets, and <i><b>w</b></i> is the underlying latent variable.  
      
-     ![dtnm_eqn](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Cboldsymbol%7Bz%7D_%7Bs%2C%20i%7D%20%3D%20%5Cboldsymbol%7B%5Comega%7D_p%5E%7B%28i%29%7D%20%5C%2C%20%5Cboldsymbol%7Bz%7D_%7Bp%2C%20i%7D%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D%5E%7B%28i%29%7D)
      
 
 The details of these approaches are described in the 2018 paper [Application of transfer learning for cancer drug sensitivity prediction](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2465-y). Below provides an overview of the TL scenarios involved in this implementation. 
