@@ -13,7 +13,7 @@ There is a considerable overlap between the two studies and we have explored the
 We have combined datasets from CCLE and GDSC through **Transfer Learning** since the samples from two different sources cannot be used together directly. To eliminate the distribution shift present in the two sets, we have implemented two different TL approaches - 
    * <ins><b>Latent Variable based Cost Optimization</b></ins>.  
      We use a *Latent variable space* to model the underlying similarities between the genomic and sensitivity datasets and try to minimize the discepancies _via_ cost optimization.  
-     ![lvco_eqn](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Clarge%20%5Cboldsymbol%7Bw%7D%20%3D%20c_0%20&plus;%20c_p%20%5Cboldsymbol%7Bz%7D_p%20&plus;%20c_s%20%5Cboldsymbol%7Bz%7D_s%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D)
+     ![lvco_eqn](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Clarge%20%5Cboldsymbol%7Bw%7D%20%3D%20c_0%20&plus;%20c_p%20%5Cboldsymbol%7Bz%7D_p%20&plus;%20c_s%20%5Cboldsymbol%7Bz%7D_s%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D)  
     We have implemented three different optimization based approaches - 
       * Latent regression prediction
       * Latent-latent prediction
