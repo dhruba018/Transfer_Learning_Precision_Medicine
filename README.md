@@ -10,7 +10,7 @@ We use *in vitro* transcriptomic and drug sensitivity information from the admin
 There is a considerable overlap between the two studies and we have explored the existing *inconsistencies between datasets* in our previous work in Briefings in Bioinformatics: [Evaluating the consistency of large-scale pharmacogenomic studies](https://academic.oup.com/bib/article-abstract/20/5/1734/5034074). 
 
 **Approaches.**  
-We have combined datasets from CCLE and GDSC through **Transfer Learning (TL)** since the samples from two different sources cannot be used together directly. To eliminate the distribution shift present in the two sets, we have implemented two different TL approaches - 
+We have combined datasets from CCLE and GDSC through **`Transfer Learning`** since the samples from two different sources cannot be used together directly. To eliminate the distribution shift present in the two sets, we have implemented two different TL approaches - 
    * <ins><b>Latent Variable based Cost Optimization</b></ins>.  
      We use a *Latent variable space* to model the underlying similarities between the genomic and sensitivity datasets and try to minimize the discepancies _via_ cost optimization. We implemented three different subapproaches -      
       * Latent regression prediction
