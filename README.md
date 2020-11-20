@@ -35,10 +35,10 @@ The details of these approaches are described in our 2018 paper: [Application of
 
 ### Cite
 * If you use either the Domain Transfer TL approach or Latent Variable Cost Optimization TL approach for your research/application, please cite the following paper - 
-> Dhruba, S., Rahman, R. et al. Application of transfer learning for cancer drug sensitivity prediction. BMC Bioinformatics 19, 497 (2018). 
-  DOI: https://doi.org/10.1186/s12859-018-2465-y
+  > Dhruba, S., Rahman, R. et al. Application of transfer learning for cancer drug sensitivity prediction. BMC Bioinformatics 19, 497 (2018). 
+    DOI: https://doi.org/10.1186/s12859-018-2465-y
 
 
 * If you use our work on the exploration of inconsistencies in the large pharmacogenomic studies, please cite the following paper - 
-> Rahman, R., Dhruba, S. R. et al., Evaluating the consistency of large-scale pharmacogenomic studies, Briefings in Bioinformatics, 20 (5), 1734 – 1753 (2019). 
-  DOI: https://doi.org/10.1093/bib/bby046
+  > Rahman, R., Dhruba, S. R. et al., Evaluating the consistency of large-scale pharmacogenomic studies, Briefings in Bioinformatics, 20 (5), 1734 – 1753 (2019). 
+    DOI: https://doi.org/10.1093/bib/bby046
