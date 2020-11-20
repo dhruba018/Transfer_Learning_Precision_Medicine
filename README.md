@@ -31,7 +31,7 @@ We have implemented three different optimization based approaches -
 
 
 ##### Domain Transfer _via_ Nonlinear Mapping
-We have implemented a one-to-one feature mapping between the samples in the primary and secondary datasets using the *Polynomial regression mapping* to transfer the primary data to the secondary space and perform prediction using the larger datasets available in the secondary space. Note that, this approach assumes the existence of a set of *matched samples* between the two sets. 
+We implement a one-to-one feature mapping between the samples in the primary and secondary datasets using the *Polynomial regression mapping* to transfer the primary data to the secondary space and perform prediction using the larger datasets available in the secondary space. Note that, this approach assumes the existence of a set of *matched samples* between the two sets. 
      
 ![dtnm_eqn](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Clarge%20%5Cboldsymbol%7Bz%7D_%7Bs%2C%20k%7D%20%3D%20%5Cboldsymbol%7B%5Cgamma%7D_%7Bp%7D%5E%7B%28k%29%7D%20%5Cboldsymbol%7Bz%7D_%7Bp%2C%20k%7D%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D%5E%7B%28k%29%7D)  
      
