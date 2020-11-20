@@ -15,7 +15,7 @@ We have combined datasets from CCLE and GDSC through **Transfer Learning** since
      We use a *Latent variable space* to model the underlying similarities between the genomic and sensitivity datasets and try to minimize the discepancies _via_ cost optimization. 
      
      ![lvco_eqn](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Clarge%20%5Cboldsymbol%7Bw%7D%20%3D%20c_0%20&plus;%20c_p%20%5Cboldsymbol%7Bz%7D_p%20&plus;%20c_s%20%5Cboldsymbol%7Bz%7D_s%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D)  
-     where z<sub>p</sub> and z<sub>s</sub> represents the primary (target) and secondary (source) sets, and w is the underlying latent variable.  
+     where <b><it>z</it></b><sub>p</sub> and z<sub>s</sub> represents the primary (target) and secondary (source) sets, and w is the underlying latent variable.  
      We have implemented three different optimization based approaches - 
       * Latent regression prediction
       * Latent-latent prediction
