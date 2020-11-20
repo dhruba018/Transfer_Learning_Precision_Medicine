@@ -7,7 +7,7 @@ We use *in vitro* transcriptomic and drug sensitivity information from the admin
    * [Cancer Cell Line Encyclopedia (CCLE)](https://portals.broadinstitute.org/ccle/about/). A collaboration between Broad Institute and Novartis Institutes for Biomedical Research.
    * [Genomics of Drug Sensitivity in Cancer (GDSC)](https://www.cancerrxgene.org/about). A collaboration between Wellcome Sanger Institute (UK) and Center for Molecular Therapeutics at Massachusetts General Hospital Cancer Center (USA). 
 
-There is a considerable overlap between the two studies and we have explored the existing *inconsistencies between datasets* in our previous work [Evaluating the consistency of large-scale pharmacogenomic studies](https://academic.oup.com/bib/article-abstract/20/5/1734/5034074). 
+There is a considerable overlap between the two studies and we have explored the existing *inconsistencies between datasets* in our previous work in Briefings in Bioinformatics: [Evaluating the consistency of large-scale pharmacogenomic studies](https://academic.oup.com/bib/article-abstract/20/5/1734/5034074). 
 
 **Approaches.**  
 We have combined datasets from CCLE and GDSC through **Transfer Learning (TL)** since the samples from two different sources cannot be used together directly. To eliminate the distribution shift present in the two sets, we have implemented two different TL approaches - 
