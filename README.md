@@ -21,7 +21,7 @@ We have combined datasets from CCLE and GDSC through **Transfer Learning** since
       * Latent-latent prediction
       * Combined latent prediction
    * <ins><b>Domain Transfer _via_ Nonlinear Mapping</b></ins>.  
-     We implement a one-to-one mapping between the samples in the primary and secondary datasets using the *Polynomial regression mapping*.  
+     We have implemented a one-to-one mapping between the samples in the primary and secondary datasets using the *Polynomial regression mapping* to transfer the primary data to the secondary space and perform prediction using the larger datasets available in the secondary space. 
      
      ![dtnm_eqn](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Clarge%20%5Cboldsymbol%7Bz%7D_%7Bs%2C%20k%7D%20%3D%20%5Cboldsymbol%7B%5Cgamma%7D_%7Bp%7D%5E%7B%28k%29%7D%20%5Cboldsymbol%7Bz%7D_%7Bp%2C%20k%7D%20&plus;%20%5Cboldsymbol%7B%5Cvarepsilon%7D%5E%7B%28k%29%7D)  
      where <i><b>z</b><sub>p, k</sub></i> and <i><b>z</b><sub>s, k</sub></i> represents the <i><b>k</b></i>-th feature (gene/drug) in the primary and secondary sets, and <i><b>γ</b></i> is the polynomial mapping coefficient.      
