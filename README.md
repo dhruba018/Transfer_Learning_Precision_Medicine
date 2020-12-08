@@ -41,6 +41,7 @@ The details of these approaches are described in our 2018 paper: [Application of
 
 ![TL_summary](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/TLsummary.jpg)
 
+##### Note
 We also implemented a **Dimensionality Reduction based Transfer Learning** approach using the Principal Component Analysis. The details of this work can be found in this paper: [Dimensionality Reduction based Transfer Learning applied to Pharmacogenomics Databases](https://ieeexplore.ieee.org/abstract/document/8512457). 
 
 
