@@ -66,5 +66,5 @@ If you use our work on the exploration of inconsistencies in the large pharmacog
 
 
 If you use the Dimensionality Reduction based TL approach for your research/application, please cite the following paper - 
-  > Dhruba, S.R., Rahman, R. et al., Dimensionality reduction based transfer learning applied to pharmacogenomics databases, In 2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology society (EMBC), IEEE, 1246 - 1249 (2018).  
+  > Dhruba, S.R., Rahman, R. et al., Dimensionality reduction based transfer learning applied to pharmacogenomics databases, In 2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology society (EMBC), Honolulu, HI, 1246 - 1249 (2018).  
     DOI: https://doi.org/10.1109/EMBC.2018.8512457
