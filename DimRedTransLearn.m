@@ -1,7 +1,7 @@
 clc;    clear;      close all
 
 % CCLE...
-[~, ~, gxdata2] = xlsread('CCLE_gene_expression_Oct_13_SRD.xlsx'); 
+[~, ~, gxdata2] = xlsread('Data\CCLE_gene_expression_Oct_13_SRD.xlsx'); 
 data22 = cell2mat(gxdata2(2:end, 2:end));
 gn2 = gxdata2(2:end, 1);
 CL2 = gxdata2(1, 2:end)';
@@ -12,7 +12,7 @@ for k = 1:length(CL2)
 end
 
 % GDSC v6...
-[~, ~, gxdata3] = xlsread('GDSC_v6_gene_expression_Oct_13_SRD.xlsx'); 
+[~, ~, gxdata3] = xlsread('Data\GDSC_v6_gene_expression_Oct_13_SRD.xlsx'); 
 data33 = cell2mat(gxdata3(2:end, 2:end));
 gn3 = gxdata3(2:end, 1);
 CL3 = gxdata3(1, 2:end)';
