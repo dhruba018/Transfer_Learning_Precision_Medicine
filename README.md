@@ -51,7 +51,7 @@ This repository contains the necessary code to reproduce the results described i
   * **[`MappingTransLearn.m`](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/MappingTransLearn.m):** Main function for Domain Transfer with Nonlinear Mapping approach 
   * **[`LatentPredTransLearn.m`](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/LatentPredTransLearn.m):** Main function for Latent Variable based Cost Optimization approaches - includes all three approaches 
   * **[`TransLearnConcise_v2.m`](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/TransLearnConcise_v2.m):** Main experiment code  
-  * **[`DimRedTransLearn.m`](https://github.com/dhruba018/Dose_time_Response_Recursive_Model/blob/master/DimRedTransLearn.m):** Main file for Dimensionality Reduction based Transfer Learning  
+  * **[`DimRedTransLearn.m`](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/DimRedTransLearn.m):** Main file for Dimensionality Reduction based Transfer Learning  
 
 
 ### How to Cite
