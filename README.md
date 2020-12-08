@@ -41,6 +41,17 @@ The details of these approaches are described in our 2018 paper: [Application of
 
 ![TL_summary](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/TLsummary.jpg)
 
+We also implemented a **Dimensionality Reduction based Transfer Learning** approach using the Principal Component Analysis. The details of this work can be found in this paper: [Dimensionality Reduction based Transfer Learning applied to Pharmacogenomics Databases](https://ieeexplore.ieee.org/abstract/document/8512457). 
+
+
+#### File description
+This repository contains the necessary code to reproduce the results described in the paper and the corresponding data for the synthetic experiment.  
+  * **Data:** Contains data for modeling. The processed data used in our experiments can be found [here](https://www.dropbox.com/sh/x7o65bv5gtsw5h4/AAAgUVnkKwlCXDHaVjHRUUuEa?dl=0)
+  * **[`MappingTransLearn.m`](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/MappingTransLearn.m):** Main function for Domain Transfer with Nonlinear Mapping approach 
+  * **[`LatentPredTransLearn.m`](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/LatentPredTransLearn.m):** Main function for Latent Variable based Cost Optimization approaches - includes all three approaches 
+  * **[`TransLearnConcise_v2.m`](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/TransLearnConcise_v2.m):** Main experiment code  
+  * **[`DimRedTransLearn.m`](https://github.com/dhruba018/Dose_time_Response_Recursive_Model/blob/master/DimRedTransLearn.m):** Main file for Dimensionality Reduction based Transfer Learning  
+
 
 ### How to Cite
 If you use either the Domain Transfer TL approach or Latent Variable Cost Optimization TL approach for your research/application, please cite the following paper - 
@@ -51,3 +62,8 @@ If you use either the Domain Transfer TL approach or Latent Variable Cost Optimi
 If you use our work on the exploration of inconsistencies in the large pharmacogenomic studies, please cite the following paper - 
   > Rahman, R., Dhruba, S. R. et al., Evaluating the consistency of large-scale pharmacogenomic studies, Briefings in Bioinformatics, 20 (5), 1734 – 1753 (2019). 
     DOI: https://doi.org/10.1093/bib/bby046
+
+
+If you use the Dimensionality Reduction based TL approach for your research/application, please cite the following paper - 
+  > Dhruba, S.R., Rahman, R. et al., Dimensionality reduction based transfer learning applied to pharmacogenomics databases, In 2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology society (EMBC), IEEE, 1246 - 1249 (2018).  
+    DOI: https://doi.org/10.1109/EMBC.2018.8512457
