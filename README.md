@@ -46,7 +46,7 @@ We also implemented a **Dimensionality Reduction based Transfer Learning** appro
 
 
 #### File description
-This repository contains the necessary code to reproduce the results described in the paper and the corresponding data for the synthetic experiment.  
+This repository contains the necessary code to reproduce the results described in the paper and the corresponding source for the data used in the simulation experiments.  
   * **Data:** Contains data for modeling. The processed data used in our experiments can be found [here](https://www.dropbox.com/sh/x7o65bv5gtsw5h4/AAAgUVnkKwlCXDHaVjHRUUuEa?dl=0)
   * **[`MappingTransLearn.m`](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/MappingTransLearn.m):** Main function for Domain Transfer with Nonlinear Mapping approach 
   * **[`LatentPredTransLearn.m`](https://github.com/dhruba018/Transfer_Learning_Precision_Medicine/blob/master/LatentPredTransLearn.m):** Main function for Latent Variable based Cost Optimization approaches - includes all three approaches 
